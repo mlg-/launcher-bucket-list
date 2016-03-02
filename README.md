@@ -33,13 +33,3 @@ Our app should satisfy the following requirements:
 * Pull down all the branches in this repo: `git fetch --all`
 * Check out the branch I made with the solution: `git checkout clinic-solution`
 * Run `atom .` from the directory to open up the whole folder and see the code I wrote
-
-##### When finished it you would like to push this to your github do the following:
-
-* In the terminal: `git remote rm origin`
-* Go to Github and set up your own repo (or use the hub gem and run `hub create repo-name`)
-* Terminal: `git remote add origin <your-remote-repo-url>`
-* Then add and push your own work.
-  - `git add .`
-  - `git commit -m "initial commit"`
-  - `git push origin master`
