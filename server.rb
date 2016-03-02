@@ -7,3 +7,13 @@ get "/bucket-list" do
   end
   erb :index
 end
+
+get '/' do
+  redirect_to '/bucket-list'
+end
+
+post '/bucket-list' do
+  CSV.open("bucket_list.csv", "a") do |row|
+    row << params[:bucket_list_item]
+  end
+end
