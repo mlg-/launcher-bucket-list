@@ -26,6 +26,14 @@ Our app should satisfy the following requirements:
 * `bundle` then `rspec`
 * Work through the test errors, one by one.
 
+## To look at the finished code from the clinic:
+
+* Run this in your terminal: `git clone git@github.com:mlg-/launcher-bucket-list.git launcher-bucket-list-solution` (If you get permission denied, use HTTPS: `git clone https://github.com/mlg-/launcher-bucket-list.git launcher-bucket-list-solution`).
+* Go into the directory you just downloaded: `cd launcher-bucket-list-solution`
+* Pull down all the branches in this repo: `git fetch --all`
+* Check out the branch I made with the solution: `git checkout clinic-solution`
+* Run `atom .` from the directory to open up the whole folder and see the code I wrote
+
 ##### When finished it you would like to push this to your github do the following:
 
 * In the terminal: `git remote rm origin`
