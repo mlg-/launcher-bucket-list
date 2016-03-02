@@ -4,7 +4,7 @@ feature "user adds a bucket list goal" do
   scenario "when valid form submitted" do
     visit "/bucket-list"
 
-    fill_in "Add New Favorite Thing", with: "Complete yoga teacher training"
+    fill_in "Add New Bucket List Goal", with: "Complete yoga teacher training"
     click_on "Add"
 
     expect(page).to have_content("Complete yoga teacher training")

@@ -13,7 +13,10 @@ get '/' do
 end
 
 post '/bucket-list' do
-  CSV.open("bucket_list.csv", "a") do |row|
-    row << params[:bucket_list_item]
+  unless params[:bucket_list_item].empty?
+    CSV.open("bucket_list.csv", "a") do |row|
+      row << params[:bucket_list_item]
+    end
   end
+  redirect '/bucket-list'
 end
