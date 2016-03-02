@@ -2,6 +2,7 @@ require "rspec"
 require "capybara/rspec"
 require "csv"
 require "launchy"
+require "pry"
 
 require_relative "../server"
 

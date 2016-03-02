@@ -7,6 +7,8 @@ feature "user sees a list of favorite things" do
       file.puts([thing])
     end
 
+    binding.pry
+
     visit "/bucket-list"
     expect(page).to have_content("Get my first dev job!")
   end
