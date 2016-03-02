@@ -9,10 +9,10 @@ Capybara.app = Sinatra::Application
 
 RSpec.configure do |config|
   config.before(:suite) do
-    CSV.open('favorites_list.csv', 'w') { |file| file.puts(["favorite"]) }
+    CSV.open('bucket_list.csv', 'w') { |file| file.puts(["bucket_list_item"]) }
   end
 
   config.after(:each) do
-    CSV.open('favorites_list.csv', 'w') { |file| file.puts(["favorite"]) }
+    CSV.open('bucket_list.csv', 'w') { |file| file.puts(["bucket_list_item"]) }
   end
 end

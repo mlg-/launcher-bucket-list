@@ -29,7 +29,7 @@ Our app should satisfy the following requirements:
 ##### When finished it you would like to push this to your github do the following:
 
 * In the terminal: `git remote rm origin`
-* Go to Github and set up your own repo
+* Go to Github and set up your own repo (or use the hub gem and run `hub create repo-name`)
 * Terminal: `git remote add origin <your-remote-repo-url>`
 * Then add and push your own work.
   - `git add .`
